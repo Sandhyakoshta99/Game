@@ -1,0 +1,61 @@
+/* 
+Style sheet for the snake game 
+ *@AUTHOR:SANDHYA KOSHTA     
+ *@DATE : 05 January 2025      
+ */
+
+/* General styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #464152;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .game-container {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  canvas {
+    background-color: #333;
+    border: 10px solid #fff;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .score {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: lime;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darkgreen;
+    color: white;
+  }
+  
+  /* Game Over Message */
+  #gameOver {
+    margin-top: 20px;
+  }
+  
+  #gameOver.hidden {
+    display: none;
+  }
+  

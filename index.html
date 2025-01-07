@@ -1,0 +1,30 @@
+<!--
+  Program to implement snake game
+ *@AUTHOR:SANDHYA KOSHTA     
+ *@DATE : 05 January 2025      
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Snake Game</h1>
+    <p class="score">Score: <span id="score">0</span></p>
+    
+    <canvas id="gameCanvas" width="650" height="500"></canvas>
+    <button id="startGameButton">Start Game</button>
+    <div id="gameOver" class="hidden">
+      <h2>Game Over</h2>
+      <p>Your Final Score: <span id="finalScore">0</span></p>
+      <button id="restartGameButton">Restart</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
