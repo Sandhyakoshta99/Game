@@ -1,9 +1,3 @@
-<!--
-  Program to implement snake game
- *@AUTHOR:SANDHYA KOSHTA     
- *@DATE : 05 January 2025      
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,17 +8,47 @@
 </head>
 <body>
   <div class="game-container">
-    <h1>Snake Game</h1>
-    <p class="score">Score: <span id="score">0</span></p>
-    
-    <canvas id="gameCanvas" width="650" height="500"></canvas>
-    <button id="startGameButton">Start Game</button>
-    <div id="gameOver" class="hidden">
-      <h2>Game Over</h2>
+    <h1>Welcome to the 🐍 Snake Game!</h1>
+    <p class="score">Current Score: <span id="score">0</span></p>
+    <p class="high-score">High Score: <span id="highScore">0</span></p>
+
+    <canvas id="gameCanvas" width="500" height="450"></canvas>
+
+    <!-- Joystick controls -->
+    <div class="joystick-controls">
+      <button id="upButton" class="control-btn">⬆️</button>
+      <div>
+        <button id="leftButton" class="control-btn">⬅️</button>
+        <button id="rightButton" class="control-btn">➡️</button>
+      </div>
+      <button id="downButton" class="control-btn">⬇️</button>
+    </div>
+
+    <!-- Game Buttons -->
+    <div class="game-buttons">
+      <button id="startGameButton">Start Game</button>
+      <button id="pauseGameButton" disabled>Pause</button>
+    </div>
+
+    <!-- Game Over Popup -->
+    <div id="gameOverPopup" class="popup hidden">
+      <h2>Game Over 🛑</h2>
       <p>Your Final Score: <span id="finalScore">0</span></p>
+      <p>High Score: <span id="popupHighScore">0</span></p>
       <button id="restartGameButton">Restart</button>
     </div>
   </div>
-  <script src="script.js"></script>
+
+  <!-- Lock Screen -->
+  <div id="lockScreen" class="hidden">
+    <h3>🔒 Game Locked</h3>
+    <p>Press any key or tap to unlock the game!</p>
+  </div>
+
+  <script src="script.js"></script> 
+  <footer id="gameFooter">
+    <p>&copy;January 2025 Sandhya Koshta. All rights reserved.</p>
+  </footer>
+  
 </body>
 </html>
